@@ -1,7 +1,7 @@
 import socket
 import os
 server_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-host ='192.168.43.42'
+host =socket.gethostbyname(socket.gethostname())
 port = 12345
 server_socket.bind((host,port))
 print("Server socket sucessfully Created on IP : {} at port {} ".format(host,port))
