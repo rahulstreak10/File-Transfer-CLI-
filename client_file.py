@@ -1,6 +1,6 @@
 import socket
 server_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-host = '192.168.43.42'
+host = socket.gethostbyname(socket.gethostname())#enter the ip of the server
 port = 12345
 x = input("Enter file name : ")
 server_socket.connect((host,port))
